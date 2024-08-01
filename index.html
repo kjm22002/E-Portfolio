@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
-
     <script
       src="https://kit.fontawesome.com/e313173242.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div id="header">
+    <header id="header">
       <div class="container">
         <nav>
           <img src="images/logo.png" alt="Personal Logo" class="logo" />
@@ -31,12 +30,12 @@
           <h1>Hi, I'm <span>Kenneth</span> Maeda :)</h1>
         </div>
       </div>
-    </div>
-    <div id="about">
+    </header>
+    <section id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/Random-me.JPG" alt="Kenneth Maeda" />
+            <img src="images/about-me.JPG" alt="Kenneth Maeda" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -73,6 +72,9 @@
                 Experience
               </p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('extracurricular')">
+                Extracurricular
+              </p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
@@ -121,43 +123,48 @@
                 </li>
               </ul>
             </div>
+            <div class="tab-contents" id="extracurricular">
+              <ul>
+                <li>
+                  <span>January 2024 - Present</span><br />Engineering
+                  Ambassador
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="portfolio">
+    </section>
+    <section id="portfolio">
       <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
           <div class="work">
-            <img
-              src="images/Password-Manager.png"
-              alt="Password Manager Project"
-            />
+            <img src="images/project-1.png" alt="Password Manager Project" />
             <div class="layer">
               <h3>Password Manager</h3>
               <p>
-                Engineering a Django-based password manager with advanced
-                encryption protocols for robust data protection.
+                In Progress: Engineering a Django-based password manager with
+                advanced encryption protocols for robust data protection.
               </p>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-2.png" alt="Future Project" />
+            <img src="images/project-2.png" alt="Future Project" />
             <div class="layer">
               <h3>Future Project</h3>
               <p>
-                This is a filler as there is no on-going projects. If so, I'll
+                This is a filler as there are no ongoing projects. If so, I'll
                 replace this slot.
               </p>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-2.png" alt="Future Project" />
+            <img src="images/project-3.png" alt="Future Project" />
             <div class="layer">
               <h3>Future Project</h3>
               <p>
-                This is a filler as there is no on-going projects. If so, I'll
+                This is a filler as there are no ongoing projects. If so, I'll
                 replace this slot.
               </p>
             </div>
@@ -166,14 +173,13 @@
         </div>
         <a href="#header" class="btn">Return Home</a>
       </div>
-    </div>
-
-    <div id="contact">
+    </section>
+    <section id="contact">
       <div class="container">
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <h8>The Submittion Button Is Unavailable</h8>
+            <p>The Submission Button Is Unavailable</p>
             <p>
               <i class="fas fa-paper-plane"></i> Email:
               Kenneth.Maeda@outlook.com
@@ -216,7 +222,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -242,7 +248,7 @@
       }
     </script>
     <script>
-      const scriptURL = "your_actual_app_script_link_here"; // Update with your actual script link
+      const scriptURL = "my_actual_app_script_link_here"; // Update this script link as it's broken
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
 

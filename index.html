@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
+
     <script
-      src="https://kit.fontawesome.com/c4254e24a8.js"
+      src="https://kit.fontawesome.com/e313173242.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -15,11 +16,10 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/logo.png" class="logo" />
+          <img src="images/logo.png" alt="Personal Logo" class="logo" />
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <!--<li><a href="#services">Services</a></li>-->
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
@@ -28,52 +28,41 @@
         </nav>
         <div class="header-text">
           <p>Computer Science Student</p>
-          <h1>Hi, I'm <span>Kenneth</span><br />Maeda from UCONN</h1>
+          <h1>Hi, I'm <span>Kenneth</span> Maeda from UCONN</h1>
         </div>
       </div>
     </div>
-    <!-- -----------about---------- -->
     <div id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/Random-me.JPG" />
+            <img src="images/Random-me.JPG" alt="Kenneth Maeda" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-
             <p>
-              Hello again! I am a highly motivated and driven student in
-              Computer Science at the University of Connecticut. As a
-              first-generation college student, breaking into the world of
-              technology has been quite the ride. I started off with little
-              knowledge but was lucky to have friends around who could mentor me
-              through the process.
-            </p>
-
-            <p>
-              I am currently following up on topics of interest, namely, in
-              Computational Data Analytics, Cybersecurity, and Software
-              Engineering. Each of these presents differently in terms of
-              opportunities and rewards that can be reaped; I get excited about
-              getting my hands dirty on projects that will reach out to a team
-              of like-minded peers to share in the benefits.
-            </p>
-
-            <p>
-              Specifically, I am keen to apply my skill base in areas such as
-              finance or data protection, where new technology has potential of
-              increasing efficiency and security. I look forward to doing
-              meaningful work on real projects and growing with a dynamic,
-              progressive team.
-            </p>
-
-            <p>
-              Let's connect, and let's discuss how we can drive technological
-              progress together!
+              Hello again! I am a highly motivated and driven Computer Science
+              student at the University of Connecticut. As a first-generation
+              college student, breaking into the world of technology has been
+              quite the ride. I started off with little knowledge but was lucky
+              to have friends around who could mentor me through the process.
             </p>
             <p>
-              P.S. I love cats as well to explore and give everything a shot.
+              I am currently pursuing interests in Computational Data Analytics,
+              Cybersecurity, and Software Engineering. Each of these areas
+              offers unique opportunities and rewards; I get excited about
+              diving into projects that bring together a team of like-minded
+              peers to share in the benefits.
+            </p>
+            <p>
+              Specifically, I am eager to apply my skills in sectors like
+              finance or data protection, where innovative technology can
+              enhance efficiency and security. I look forward to engaging in
+              meaningful projects and growing with a dynamic, progressive team.
+            </p>
+            <p>
+              Let's connect and explore how we can drive technological progress
+              together! P.S. I love cats and enjoy exploring new challenges.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
@@ -87,28 +76,27 @@
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
-                  <span>Competitive Programming</span><br />Solving Problems on
-                  LeetCode in either individual or team-oriented settings.
+                  <span>Competitive Programming</span><br />Solving problems on
+                  LeetCode, both individually and in teams.
                 </li>
                 <li>
                   <span>Cloud Computing</span><br />Utilizing Google Cloud for
                   scalable solutions. Currently learning AWS.
                 </li>
                 <li>
-                  <span>Team Coollaboration</span><br />Working effectively in
-                  team settings to achieve goals.
+                  <span>Team Collaboration</span><br />Working effectively in
+                  team settings to achieve collective goals.
                 </li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>July 2024 - Currently</span><br />Headstarter Fellowship
+                  <span>July 2024 - Present</span><br />Headstarter Fellowship
                   Student
                 </li>
                 <li>
-                  <span>June 2024 - Currently</span><br />Codepath TIP 102
-                  Student
+                  <span>June 2024 - Present</span><br />Codepath TIP 102 Student
                 </li>
                 <li>
                   <span>February 2024 - May 2024</span><br />Codepath
@@ -123,12 +111,12 @@
             <div class="tab-contents" id="education">
               <ul>
                 <li>
-                  <span>August 2022 - May 2026</span><br />Computer Science at
-                  University of Connecticut
+                  <span>August 2022 - May 2026</span><br />Bachelor of Science
+                  in Computer Science, University of Connecticut
                 </li>
                 <li>
-                  <span>August 2018 - June 2022</span><br />Carpenter and CNC
-                  Machinary Operator at JM Wright Technical High School
+                  <span>August 2018 - June 2022</span><br />Carpentry and CNC
+                  Machinery Operation, JM Wright Technical High School
                 </li>
               </ul>
             </div>
@@ -136,100 +124,74 @@
         </div>
       </div>
     </div>
-    <!-- ---------services---------------- -->
-    <!--<div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fas fa-code"></i>
-            <h2>Web Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla
-              nibh, tincidunt sit amet sapien quis.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fas fa-crop-alt"></i>
-            <h2>UI/UX Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla
-              nibh, tincidunt sit amet sapien quis.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fab fa-app-store"></i>
-            <h2>App Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla
-              nibh, tincidunt sit amet sapien quis.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- ----------portfolio------------ -->
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
           <div class="work">
-            <img src="images/work-1.png" />
+            <img
+              src="images/Password-Manager.png"
+              alt="Password Manager Project"
+            />
             <div class="layer">
-              <h3>Social Media App</h3>
+              <h3>Password Manager</h3>
               <p>
-                The app connects you yo the talented people around the world.
-                Download it from play store.
+                Engineering a Django-based password manager with advanced
+                encryption protocols for robust data protection.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-2.png" />
+            <img src="images/work-2.png" alt="Future Project" />
             <div class="layer">
-              <h3>Music App</h3>
+              <h3>Future Project</h3>
               <p>
-                The app connects you yo the talented people around the world.
-                Download it from play store.
+                This is a filler as there is no on-going projects. If so, I'll
+                replace this slot.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-3.png" />
+            <img src="images/work-2.png" alt="Future Project" />
             <div class="layer">
-              <h3>Online Shopping App</h3>
+              <h3>Future Project</h3>
               <p>
-                The app connects you yo the talented people around the world.
-                Download it from play store.
+                This is a filler as there is no on-going projects. If so, I'll
+                replace this slot.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
+          <!-- Future projects can be added here with similar structure -->
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#header" class="btn">Return Home</a>
       </div>
     </div>
-    <!-- ----------contact------------- -->
     <div id="contact">
       <div class="container">
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i> Kenneth.Maeda@outlook.com</p>
-
-            <div class="social-icons">
-              <a href="https://facebook.com/"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href=""><i class="fab fa-twitter-square"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
-              <a href=""><i class="fab fa-linkedin"></i></a>
-            </div>
-            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            <p>
+              <i class="fas fa-paper-plane"></i> Email:
+              Kenneth.Maeda@outlook.com
+            </p>
+            <p>
+              <i class="fa-brands fa-linkedin"></i> Linkedin:
+              <a
+                href="https://www.linkedin.com/in/kenneth-maeda"
+                target="_blank"
+                >www.linkedin.com/in/kenneth-maeda</a
+              >
+            </p>
+            <p>
+              <i class="fa-brands fa-github"></i> Github:
+              <a href="https://github.com/NoVaxi0n" target="_blank"
+                >https://github.com/NoVaxi0n</a
+              >
+            </p>
+            <a href="images/Resume-PDF.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
@@ -251,45 +213,33 @@
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>
-          Copyright © Kenneth. Made wtih <i class="fas fa-heart"></i> by
-          <a
-            href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1"
-            >Easy Tutorials</a
-          >
-        </p>
-      </div>
     </div>
-
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
 
       function opentab(tabname) {
-        for (tablink of tablinks) {
+        for (var tablink of tablinks) {
           tablink.classList.remove("active-link");
         }
-        for (tabcontent of tabcontents) {
+        for (var tabcontent of tabcontents) {
           tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
-    </script>
 
-    <script>
-      var sidemeu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
       function openmenu() {
-        sidemeu.style.right = "0";
+        sidemenu.style.right = "0";
       }
       function closemenu() {
-        sidemeu.style.right = "-200px";
+        sidemenu.style.right = "-200px";
       }
     </script>
     <script>
-      const scriptURL = "< add you own link here >"; // add your own app script link here
+      const scriptURL = "your_actual_app_script_link_here"; // Update with your actual script link
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
 
@@ -298,7 +248,7 @@
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
+            setTimeout(() => {
               msg.innerHTML = "";
             }, 5000);
             form.reset();

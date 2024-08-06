@@ -142,6 +142,21 @@ nav ul li a:hover::after {
   display: block;
 }
 
+/* Ensure consistent spacing in tab-contents */
+.tab-contents p,
+.tab-contents li,
+.tab-contents span,
+.tab-contents strong {
+  margin-bottom: 20px; /* Adjust this value to match the desired spacing */
+}
+
+/* Add margin between the span and the following element */
+.tab-contents span + p,
+.tab-contents span + strong,
+.tab-contents strong + p,
+.tab-contents strong + span {
+  margin-top: 10px; /* Adjust this value as needed */
+}
 /* ----------------services------------- */
 #services {
   padding: 30px 0;

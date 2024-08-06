@@ -7,7 +7,7 @@ This repository contains the source code for Kenneth Maeda's personal portfolio 
 The portfolio website is designed to provide an overview of Kenneth's professional experience, education, skills, and projects. It is structured into several key sections:
 
 - **Home**: Introduction and welcome message.
-- **About**: Information about Kenneth, including his interests, background, and skills.
+- **About**: Information about Kenneth, including his interests, background, skills, and future plans or courses.
 - **Portfolio**: Showcase of projects, including descriptions and images.
 - **Contact**: Contact details and a form for reaching out.
 

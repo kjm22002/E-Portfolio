@@ -10,6 +10,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Z22sPgwCaG0ABJnTY");
+      })();
+    </script>
   </head>
   <body>
     <header id="header">
@@ -291,29 +300,29 @@
             </p>
 
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/kenneth-maeda/"
-                ><i class="fa fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/NoVaxi0n"
-                ><i class="fa-brands fa-github"></i
-              ></a>
+              <a href="https://www.linkedin.com/in/kenneth-maeda/">
+                <i class="fa fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/NoVaxi0n">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
 
-            <a href="images/Resume_PDF.pdf" download class="btn btn2"
-              >Download Resume</a
-            >
+            <a href="images/Resume_PDF.pdf" download class="btn btn2">
+              Download Resume
+            </a>
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
+            <form id="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required />
               <input
                 type="email"
-                name="Email"
+                name="email"
                 placeholder="Your Email"
                 required
               />
               <textarea
-                name="Message"
+                name="message"
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
@@ -349,14 +358,14 @@
       }
     </script>
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwAKLZsn2AFG6hDJT9N1SCzdLR9AekqhpJf5tMyDcfrWK0AWjUJFjaOmottpnClL0u-/exec"; // Update this script link as it's broken
-      const form = document.forms["submit-to-google-sheet"];
+      const form = document.getElementById("contact-form");
       const msg = document.getElementById("msg");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+
+        emailjs
+          .sendForm("service_efdczlh", "template_t0hkv0m", form)
           .then((response) => {
             msg.innerHTML = "Message sent successfully";
             setTimeout(() => {
@@ -364,7 +373,13 @@
             }, 5000);
             form.reset();
           })
-          .catch((error) => console.error("Error!", error.message));
+          .catch((error) => {
+            console.error("Error!", error);
+            msg.innerHTML = "Message failed to send";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+          });
       });
     </script>
   </body>
